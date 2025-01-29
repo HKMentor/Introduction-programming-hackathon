@@ -287,14 +287,6 @@ header .mobile-menu-icon {
         padding: 10px;
     }
 }
-
-
-
-
-
-
-
-
 footer {
     text-align: center;
     margin-top: 20px;
@@ -305,7 +297,7 @@ footer {
 }
 
 .hr-line {
-    width: 60rem;
+    width: 100%;
     font-weight: bold;
 }
 
@@ -345,5 +337,96 @@ footer .social-icons a:hover {
 
     .mobile-menu-icon {
         display: block;
+    }
+}
+
+
+@media (max-width: 480px) {
+    /* Header Navigation */
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #f7f7f7;
+        border: 1px solid #333;
+        border-radius: 10px;
+        padding: 10px;
+        width: 200px;
+    }
+
+    header ul.active {
+        display: flex;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .frame{
+        width: 100%;
+        
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .about-section .image img {
+        width: 100%;
+    }
+
+    .about-section .content h1 {
+        font-size: 2rem;
+    }
+
+    /* Services Section */
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contact-form label {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+    }
+
+    .social-icons {
+        gap: 20px;
     }
 }
