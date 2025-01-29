@@ -184,6 +184,7 @@ header .mobile-menu-icon {
         flex-direction: column;
         align-items: center;
     }
+    
 }
 
 .contact-container h2 {
@@ -281,7 +282,10 @@ header .mobile-menu-icon {
         font-size: 0.9rem;
         padding: 10px;
     }
-
+    .frame{
+        width: 100%;
+        
+    }
     .contact-form button {
         font-size: 1rem;
         padding: 10px;
